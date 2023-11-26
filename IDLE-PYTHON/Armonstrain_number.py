@@ -1,9 +1,8 @@
-num = int(input("Enter the number :"))
+# find the sum of naturla numbers 
 
-# num1 = str(num)
+num = int(input("Enter the last digit of natrual numbers : "))
 
-for x in num:
-    print(x**num)
-    
-
+if num > 0 : 
+    for i in range(1, num+1): 
+        break
 
