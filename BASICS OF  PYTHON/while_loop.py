@@ -11,5 +11,6 @@ while j< 10:
     if j == 7:
         continue
     j += 1
+    
     break
 print("Done")
