@@ -1,35 +1,11 @@
-class Calculator:
-    def __init__(self):
-        self.result = 0
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age =age
+    def __str__(self):
+        return f"{self.name}({self.age})"
 
-    def add(self, number):
-        self.result += number
-        return self.result
-
-    def subtract(self, number):
-        self.result -= number
-        return self.result
-
-    def multiply(self, number):
-        self.result *= number
-        return self.result
-
-    def divide(self, number):
-        if number == 0:
-            raise ValueError("Division by zero is not allowed.")
-        self.result /= number
-        return self.result
-
-    def clear(self):
-        self.result = 0
-
-# usage
-calc = Calculator()
-
-print(calc.add(5))
-print(calc.subtract(10))
-print(calc.multiply(3))
-print(calc.divide(2))
-
-calc.clear()
-print(calc.result)
+p1 = Person('jhon',36) 
+print(p1)
+# print(p1.name)
+# print(p1.age)
