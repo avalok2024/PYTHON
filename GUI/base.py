@@ -7,12 +7,15 @@ root.title("Learning the new windows segment")
 
 
 def open():
-    top = Toplevel
-    top.title("This is new file")
+    global my_img
+    top = Toplevel()
+    top.title("This is a new file")
     my_img = ImageTk.PhotoImage(Image.open("D:/PYTHON/GUI/Image Viewer/avenger6.png"))
     mylabel = Label(top, image=my_img).pack()
+    btn = Button(top, text="Close", command=top.destroy).pack()
 
-bt = Button(root, text="Open", command=open)
+
+bt = Button(root, text="Open", command=open).pack()
 # mylable = Label(top,text="hello there!").pack()
 
 
