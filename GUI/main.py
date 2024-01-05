@@ -4,14 +4,20 @@ from PIL import ImageTk, Image
 root = Tk()
 root.title("Frames")
 
-frame = LabelFrame(root, text="This is frame...", padx=50, pady=50)
-frame.grid(padx=10, pady=10)
+r = IntVar()
+r.set("2")
 
-b1 = Button(frame, text="Don't Click")
-b1.grid(row=0, column=1)
+def clicked(value):
+    myLabel = Label(root, text=value)
+    myLabel.pack()
 
-b2 = Button(frame, text="Click Here!")
-b2.grid(row=1, column=2)
+Radiobutton(root, text="option 1", variable=r, value=1, command=lambda : clicked(r.get())).pack()
+Radiobutton(root, text="option 2", variable=r, value=2, command=lambda : clicked(r.get())).pack()
 
+myButton = Button(root, text="clicked me!", command=lambda : clicked(r.get()))
+myButton.pack()
+
+myLabel = Label(root, text=r.get())
+myLabel.pack()
 
 root.mainloop()
