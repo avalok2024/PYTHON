@@ -2,14 +2,16 @@ from tkinter import *
 from PIL import ImageTk, Image
 
 root = Tk()
-root.title('Learning the Python')
-root.iconbitmap("C:/Users/user/OneDrive/Pictures/PHOTOS/3.jpg")
+root.title("Frames")
 
-my_img = ImageTk.PhotoImage(Image.open("11.png"))
-my_label = Label(root, image=my_img)
-my_label.pack()
+frame = LabelFrame(root, text="This is frame...", padx=50, pady=50)
+frame.grid(padx=10, pady=10)
 
-button_quit = Button(root, text="Exit", command=root.quit)
-button_quit.pack()
+b1 = Button(frame, text="Don't Click")
+b1.grid(row=0, column=1)
+
+b2 = Button(frame, text="Click Here!")
+b2.grid(row=1, column=2)
+
 
 root.mainloop()

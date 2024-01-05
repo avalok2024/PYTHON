@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d4eebea-991a-406c-b2f3-2153c310d63b" name="Changes" comment="python --New side of python test!">
-      <change afterPath="$PROJECT_DIR$/GUI/Image Viewer/avenger1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/Image Viewer/avenger2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/Image Viewer/avenger3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/Image Viewer/avenger4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/Image Viewer/avenger5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/Image Viewer/avenger6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/Image Viewer/image_viwer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOPS/item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOPS/itmes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOPS/keyboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOPS/oops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOPS/phone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +43,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.image_viwer">
+  <component name="RunManager" selected="Python.main">
     <configuration name="calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PYTHON" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.image_viwer" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.image_viwer" />
         <item itemvalue="Python.calculator" />
         <item itemvalue="Python.oops (1)" />
         <item itemvalue="Python.item" />
