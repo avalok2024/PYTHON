@@ -1,8 +1,12 @@
+# REQUIRED : POSTMAN APP
+
 from typing import Union,Optional
 from fastapi.params import Body
 from pydantic import BaseModel
 from fastapi import FastAPI, Response, status, HTTPException
 from random import randrange
+import psycopg2
+from psycopg2.extras import RealDictConnection
 
 app = FastAPI()
 
@@ -11,6 +15,14 @@ class Post(BaseModel):
     content : str
     published : bool = True
     rating : Optional[int] = None
+try:
+    conn = psycopg2.connect(host="localhost", Database='fastapi', user='postgres',
+                            password='avalok2024.postgres', port=5432, cursor_factory=RealDictConnection)
+    cursor = conn.cursor()
+    print("Database is succesfully connected")
+except Exception as error:
+    print('Connecting to Database Failed!')
+    print('Error : ', error )
 
 my_posts = [{'title' :"This is post 1", "content":"content of post 1", 'id': 1},
             {'title' : "Favroute foods ", "content": "I like pizza","id" : 2}, 
