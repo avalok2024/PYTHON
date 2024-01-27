@@ -14,9 +14,9 @@ class Post(BaseModel):
     title : str
     content : str
     published : bool = True
-    rating : Optional[int] = None
+    # rating : Optional[int] = None
 try:
-    conn = psycopg2.connect(host="localhost", Database='fastapi', user='postgres',
+    conn = psycopg2.connect(host="localhost", Database='fastapi', user='postgre',
                             password='avalok2024.postgres', port=5432, cursor_factory=RealDictConnection)
     cursor = conn.cursor()
     print("Database is succesfully connected")
